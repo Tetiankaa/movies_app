@@ -1,7 +1,8 @@
+import css from './Notfound.module.css';
 const NotFoundPage = () => {
     return (
         <div>
-            NotFoundPage
+            <img src="https://atlassianblog.wpengine.com/wp-content/uploads/2017/12/44-incredible-404-error-pages@3x-1560x760.png" alt="page not found" className={css.Notfound}/>
         </div>
     );
 };

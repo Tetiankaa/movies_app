@@ -9,10 +9,11 @@ const MoviesList = () => {
     const [movies, setMovies] = useState([]);
     const [config, setConfig] = useState(null);
 
+
+
     useEffect(() => {
         imageService.getAll().then(({data})=> setConfig(data.images));
-        movieService.getAll().then(({data})=> setMovies (data.results)
-        )
+        movieService.getAll().then(({data})=> setMovies(data.results));
     }, []);
 
 
@@ -20,7 +21,7 @@ const MoviesList = () => {
 
     return (
         <div className={css.Container}>
-            {movies.map(movie => <MoviesListCard key={movie.id} movie={movie} config={config}/>)}
+            {movies.map(movie => <MoviesListCard key={movie.id} movie={movie} config={config} />)}
         </div>
     );
 };

@@ -2,12 +2,17 @@
     flex: 0 0 calc(20% - 10px);
     margin-left: 23px;
     margin-top: 10px;
-    border-bottom: black;
+
+    position: relative;
 }
 .Movies div{
-    font-size: 20px;
+    font-size: 18px;
     font-family: Century;
     padding: 5px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+
 }
 .Movies button{
     font-size: 15px;
@@ -15,8 +20,20 @@
     height: 40px;
     font-family: Century;
     border-radius: 10px;
+    margin-left: 70px;
+
+
 }
 .Movies img{
     border-radius: 10px;
-    border-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 25px;
 }
+
+.Movies button:hover{
+    background: #2a4646;
+    color: white;
+}
+

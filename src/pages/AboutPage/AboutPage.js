@@ -1,7 +1,12 @@
+import {useLocation, useParams} from "react-router-dom";
+import {MovieInfo} from "../../components";
+
 const AboutPage = () => {
+    const {movieId} = useParams();
+
     return (
         <div>
-            AboutPage
+            <MovieInfo movieId={movieId} />
         </div>
     );
 };

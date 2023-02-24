@@ -1,15 +1,23 @@
 const baseURL = 'https://api.themoviedb.org/3';
-// const base_url = 'https://image.tmdb.org/t/p/';
+
+const baseUrl = 'https://api.themoviedb.org/3/movie'
+
+const infoMovie = {
+    baseUrl:{
+        baseUrl,
+        byId:(movie_id) =>`${baseUrl}/${movie_id}`
+    }
+}
 
 const urls = {
     movies:'/discover/movie',//done
-    movie:'/movie',
+    movie:'/movie', //done
     genres:'/genre/movie/list',
-    image:'/configuration'
+    image:'/configuration' //done
 }
 
 export {
     baseURL,
-    // base_url,
-    urls
+    urls,
+    infoMovie
 }
