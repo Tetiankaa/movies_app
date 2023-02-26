@@ -1,7 +1,9 @@
+import {GenreList} from "../../components";
+
 const GenrePage = () => {
     return (
         <div>
-            GenrePage
+            <GenreList/>
         </div>
     );
 };

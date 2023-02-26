@@ -1,24 +1,20 @@
-
 import {useEffect, useState} from "react";
+
 import {movieService} from "../../services";
 
-
-const MovieInfo = ({movieId}) => {
+const MovieInfo = ({movieId,posterPath, config}) => {
     const [film, setFilm] = useState([]);
 
-
-
     useEffect(()=>{
-        movieService.getById(movieId).then(({data})=>setFilm(data))
-    },[movieId])
+        movieService.getById(movieId).then(({data})=>setFilm(data));
+    },[movieId]);
 
 
     return (
         <div>
             {film && (
                 <>
-                    <div> {film.id}</div>
-                    <div>{film.title}</div>
+                    <h1>{film.title}</h1>
                 </>
             )}
         </div>

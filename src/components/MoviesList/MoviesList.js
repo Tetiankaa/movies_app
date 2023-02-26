@@ -13,7 +13,7 @@ const MoviesList = () => {
 
     useEffect(() => {
         imageService.getAll().then(({data})=> setConfig(data.images));
-        movieService.getAll().then(({data})=> setMovies(data.results));
+        movieService.getMovies().then(({data})=> setMovies(data.results));
     }, []);
 
 
